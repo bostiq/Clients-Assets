@@ -1,0 +1,102 @@
+@use 'colors/colorsv' as c
+@use 'mixins' as m
+
+.aside
+  position: fixed
+  left: 0
+  top: 0
+  padding: 10px
+  width: 25%
+  min-width: 110px
+  height: 100%
+  transform: translate(-96%)
+  // overflow: hidden
+  border: 5px solid lighten(c.$bg, 10)
+  border-radius: 5px
+  z-index: 999
+  background-color: transparentize(c.$bg, .1)
+  @include m.transition(transform 200ms ease-in-out)
+
+  &.opened
+    transform: translate(0%)
+    @include m.transition(transform 200ms ease-in-out)
+  
+  .flex
+    flex-flow: wrap column
+    width: 100%
+    // border:1px solid aqua
+    .color
+      width: 100%
+
+@media screen and ( max-width: 600px  )
+  .aside
+    width: 75%
+    
+        
+.clients
+  padding: 10% 0
+
+  .grid
+    grid-template: '. . . . . . . . . . . .'
+    
+    &:hover
+      grid-template: '. . .'
+
+      .color
+        height: 30px
+
+  .colors
+    padding: 5%
+  
+
+
+
+.tag 
+  position: absolute
+  right: -33px
+  top: 20vh
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 33px
+  height: 54px
+  border-top: 5px solid lighten(c.$bg, 10)
+  border-bottom: 5px solid lighten(c.$bg, 10)
+  border-right: 5px solid lighten(c.$bg, 10)
+  border-radius: 0 10px 10px 0
+  z-index: 9999999999
+  background-color: lighten(c.$bg, 10)
+  box-shadow: 0 0 10px transparentize(c.$k, .7)
+
+
+.arrow 
+  font-size: 1.6rem
+  flex-flow: wrap row
+  height: 1.6rem
+  position: relative
+  // border: 1px solid aqua
+  margin-right: -6px
+  
+  transform: rotate(0deg)
+  @include m.transition(transform 200ms ease-in-out)
+  &:hover
+    transform: scale(1.5,1.5)
+    @include m.transition(transform 200ms ease-in-out)
+    // animation: roll 400ms ease-in-out 0s 1 reverse forwards
+
+
+  
+  
+
+.tag
+  cursor: pointer
+  .arrow.opened
+    // transform: rotate(0deg)
+    // animation: roll 800ms ease-in-out 0s 1 normal forwards 
+
+@keyframes roll
+  0%
+    transform: rotate(180deg)
+  100%
+    transform: rotate(0deg)
+    

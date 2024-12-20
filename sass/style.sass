@@ -1,0 +1,131 @@
+@use '../sass' as s
+@use 'colors/jq-colors'
+@use 'colors/ccf-colors'
+@use 'colors/nira-colors'
+
+/*! -=== MAIN STYLE FILE ===-
+ .
+ .
+ .
+
+body
+  background-color: s.$bg
+  color: s.$txt
+
+a
+  &:link, &:visited
+    color: s.$txt
+  &:hover
+    color: s.$yellow-green
+  
+
+  
+main
+  padding: 1% 2% 1% 3%
+  min-width: 360px
+
+section
+  padding: 3% 0
+
+img
+  padding: 3% 0
+
+.flex
+  display: flex
+
+.grid
+  display: grid
+  
+main
+  .container
+    container-type: inline-size
+
+.swatches
+  margin: 2% auto
+  padding: 1%
+
+.swatches
+  .flex
+    flex-flow: wrap row
+    align-content: stretch
+    justify-content: space-around
+    
+  .color
+    padding: 2%
+    // width:200px
+    // min-width: 80px
+    // max-width: 20%
+    flex-grow: 1
+    flex-basis: 100px
+    margin: 5px
+    
+  
+    // font-size: clamp(.5rem, 2cqi + .1rem, 5rem)
+
+.font, .colors, .swatches,
+.url 
+  background-color: transparentize(s.$w, .9 )
+  border-radius: 5px
+  padding: 2.5% 3%
+  margin-bottom: 15px
+
+.content >
+  .flex
+    flex-flow: wrap row
+    flex-direction: row-reverse
+    justify-content: space-between
+
+  
+.colors.flex,
+.assets.flex
+  flex-flow: wrap column
+  width: 48%
+
+  .color
+    width: 100%
+    padding: 2%
+    display: grid
+    // border: 1px solid $txt
+    grid-template: 'code . name name'
+
+  .code
+    grid-area: code
+    width: 100px
+    // border: 1px solid red
+    padding: 4% 2%
+    text-transform: uppercase
+    
+@media screen and ( max-width: 600px )
+  .colors.flex
+    .color
+      display: flex
+
+.name
+  grid-area: name
+  width: 150px
+  // border: 1px solid red
+  padding: 2% 2%
+  text-transform: capitalize
+  
+  
+.code,
+.name  
+  line-height: 1.2rem
+
+.pic-box img
+  display: block
+  margin: auto
+  max-width: 100%
+  height: auto
+  object-fit: contain
+
+// .swatches
+  // border:1px solid pink
+  
+  // .wrap
+    // border:1px solid purple
+
+/*! -=== END MAIN STYLE ===-
+ *
+ *
+ *

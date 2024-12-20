@@ -1,0 +1,57 @@
+/*! -== ALL CLIENTS FONTS ==-
+@use '../font-mixins' as f
+/* -= JUICE QUEST =-
+
+/* Name: Astra
+
+   Resource url: https://juicequest.com.au/wp-content/themes/astra/assets/fonts/astra.woff
+
+/* @font-face 
+  font-family: "Astra" src: url("https://juicequest.com.au/wp-content/themes/astra/assets/fonts/astra.woff") format("woff"), url("https://juicequest.com.au/wp-content/themes/astra/assets/fonts/astra.ttf") format("truetype"), url("https://juicequest.com.au/wp-content/themes/astra/assets/fonts/astra.svg#astra") format("svg") 
+  font-style: normal font-weight: normal font-display: fallback
+ */
+@include f.font-face($font-family: 'Astra', $file-path: 'https://juicequest.com.au/wp-content/themes/astra/assets/fonts/astra', $font-style: normal, $font-weight: 700, $file-formats: woff ttf svg, $font-display: fallback )
+
+/*! -== FONT STYLES ==-
+ .
+ .
+ .
+:root
+  font-size: 1em
+
+body
+  font-family: 'Helvetica', Arial, sans-serif
+  font-size: 1rem
+
+h1
+  font-size: 2rem
+  line-height: 2rem
+  padding: calc( 2rem * .4  ) 0
+
+h2
+  font-size: 1.6rem
+  line-height: 1.6rem
+  padding: calc( 1.6rem * .4 ) 0
+
+h3
+  font-size: 1.3rem
+  line-height: 1.7rem  
+  padding: calc( 1.3rem * .4  ) 0
+
+code, ul, blockquote
+  line-height: 1rem
+  padding: calc( 1rem * .5  ) 0
+
+p
+  line-height: 1rem
+  padding: calc( 1rem * .7  ) 0  
+
+.swatches
+  .code
+    // font-size: 2vw
+    font-size: calc(clamp(.1rem, 4cqi + .1rem, 1.7rem))
+
+/*! -== END FONT STYLES ==-
+ *
+ *
+ *
