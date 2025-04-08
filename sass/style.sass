@@ -2,6 +2,7 @@
 @use 'colors/jq-colors'
 @use 'colors/ccf-colors'
 @use 'colors/nira-colors'
+@use 'colors/ss-colors'
 
 /*! -=== MAIN STYLE FILE ===-
  .
@@ -18,6 +19,12 @@ a
   &:hover
     color: s.$yellow-green
   
+code
+  word-wrap: anywhere
+  display: block
+
+.font-code
+  margin-bottom: 2%
 
   
 main
@@ -25,7 +32,7 @@ main
   min-width: 360px
 
 section
-  padding: 3% 0
+  padding: 1% 0 2% 0
 
 img
   padding: 3% 0
@@ -102,7 +109,7 @@ main
 
 .name
   grid-area: name
-  width: 150px
+  width: 190px
   // border: 1px solid red
   padding: 2% 2%
   text-transform: capitalize

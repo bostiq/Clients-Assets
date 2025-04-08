@@ -37,13 +37,42 @@
   padding: 10% 0
 
   .grid
-    grid-template: '. . . . . . . . . . . .'
+    grid-auto-flow: column
+    // grid-template: '. . . . . . . . . . . .'
+    @include m.transition(width, height 0.3s ease-in-out)
     
     &:hover
-      grid-template: '. . .'
+      // grid-auto-flow: reset
+      grid-template-columns: repeat(3, 1fr)
+      grid-auto-flow: dense
+      @include m.transition(width, height 0.3s ease-in-out)
 
       .color
         height: 30px
+  
+  // .ccf
+  //   .grid
+
+      // grid-template: '. . . . . . .'
+
+  // .nira
+  //   .grid
+
+  //     grid-template: '. . . . . . . . .'
+  
+  // .savvy
+  //   .grid
+
+  //     grid-template: '. . . . . .'
+
+  // .ccf, .nira, .savvy
+  //   .grid
+  //     &:hover
+
+  //       grid-template: '. . .'
+      
+      
+
 
   .colors
     padding: 5%
