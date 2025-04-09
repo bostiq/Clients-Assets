@@ -42,160 +42,127 @@ html lang="en"
                 .pagelink
                   a.c-link href="#juice-quest" title='Juice quest Assets' Juice quest
               .container.grid.colors
-                .color.color-1.magenta-haze
-                  .code.c-data(data-clipboard-text='#953d6b') &nbsp;
-                .color.color-2.amaranth-purple
-                  .code.c-data(data-clipboard-text='#9d2c43') &nbsp;
-                .color.color-3.indian-red
-                  .code.c-data(data-clipboard-text='#dd5162') &nbsp;
-                .color.color-4.butterscotch
-                  .code.c-data(data-clipboard-text='#ea9940') &nbsp;
-                .color.color-5.saffron
-                  .code.c-data(data-clipboard-text='#f4c046') &nbsp;
-                .color.color-6.yellow-green
-                  .code.c-data(data-clipboard-text='#9ec757') &nbsp;
-                .color.color-7.hunter-green
-                  .code.c-data(data-clipboard-text='#245a34') &nbsp;
-                .color.color-8.dry-green
-                  .code.c-data(data-clipboard-text='#386946') &nbsp;
-                .color.color-9.black
-                  .code.c-data(data-clipboard-text='#000000') &nbsp;
-                .color.color-10.bg
-                  .code.c-data(data-clipboard-text='#222222') &nbsp;
-                .color.color-11.cadet-grey
-                  .code.c-data(data-clipboard-text='#9da5ae') &nbsp;
-                .color.color-12.off-white
-                  .code.c-data(data-clipboard-text='#f4f4f4') &nbsp;
+                /! .color.color-1.magenta-haze
+                    .code.c-data(data-clipboard-text='#953d6b') &nbsp;
+                - colors = {  "magenta-haze" => "#953d6b",
+                              "amaranth-purple" => "#9d2c43",
+                              "indian-red" => "#dd5162",
+                              "butterscotch" => "#ea9940",
+                              "saffron" => "#f4c046",
+                              "yellow-green" => "#9ec757",
+                              "hunter-green" => "#245a34",
+                              "dry-green" => "#386946",
+                              "black" => "#000000",
+                              "bg" => "#222222",
+                              "cadet-grey" => "#9da5ae",
+                              "off-white" => "#f4f4f4" }
+                - colors.each_with_index do |(name, hex), index|
+                  div class="color color-#{index + 1} #{name} c-data" data-clipboard-text='#{hex}'
+                    .code &nbsp;  
             .ccf.container
               .flex.container.dets
                 .pagelink
                   a.c-link href="#ccf" title='Cockatoo Creek Farm Assets' Cockatoo Creek Farm
               .container.grid.colors
-                .color.color-1.eerie-black
-                  .code.c-data(data-clipboard-text='#282624') &nbsp;
-                .color.color-2.school-bus-yellow
-                  .code.c-data(data-clipboard-text='#ffdd00') &nbsp;
-                .color.color-3.ut-orange
-                  .code.c-data(data-clipboard-text='#ff8500') &nbsp;
-                .color.color-4.burnt-orange
-                  .code.c-data(data-clipboard-text='#aa5900') &nbsp;
-                .color.color-5.coyote
-                  .code.c-data(data-clipboard-text='#72664c') &nbsp;
-                .color.color-6.lion
-                  .code.c-data(data-clipboard-text='#a3926d') &nbsp;
-                .color.color-7.champagne
-                  .code.c-data(data-clipboard-text='#ffe9c9') &nbsp;                
+                - colors = {  "eerie-black" => "#282624",
+                              "school-bus-yellow" => "#ffdd00",
+                              "ut-orange" => "#ff8500",
+                              "burnt-orange" => "#aa5900",
+                              "coyote" => "#72664c",
+                              "lion" => "#a3926d",
+                              "champagne" => "#ffe9c9" }
+                - colors.each_with_index do |(name, hex), index|
+                  div class="color color-#{index + 1} #{name} c-data" data-clipboard-text='#{hex}'
+                    .code &nbsp;
+                
             .nira.container
               .flex.container.dets
                 .pagelink
                   a.c-link href="#nira" title='NiRA Assets' NiRA
               .container.grid.colors
-                .color.color-1.dark-green
-                  .code &nbsp;
-                .color.color-2.midnight-green
-                  .code &nbsp;
-                .color.color-3.blue-munsell
-                  .code &nbsp;
-                .color.color-4.sky-blue
-                  .code &nbsp;
-                .color.color-5.persian-green
-                  .code &nbsp;
-                .color.color-6.cream
-                  .code &nbsp;
-                .color.color-7.pink-lavender
-                  .code &nbsp;
-                .color.color-8.celeste
-                  .code &nbsp;
-                .color.color-9.columbia-blue
-                  .code &nbsp;
+
+                - colors = {  "dark-green" => "#092b2a",
+                              "midnight-green" => "#1c5661",
+                              "blue-munsell" => "#2a8294",
+                              "sky-blue" => "#7cc5d4",
+                              "persian-green" => "#20aa9d",
+                              "cream" => "#ffffcc",
+                              "pink-lavender" => "#ffccff",
+                              "celeste" => "#aaffff",
+                              "columbia-blue" => "#ccf0ff" }
+
+                - colors.each_with_index do |(name, hex), index|
+                  div class="color color-#{index + 1} #{name}"
+                    .code.c-data(data-clipboard-text='#{hex}') &nbsp;
+                
             .savvy.container
               .flex.container.dets
                 .pagelink
                   a.c-link href="#savvy" title='Savvy Savers Assets' Savvy Savers
               .container.grid.colors
-                .color.color-1.silver.c-data(data-clipboard-text='#C1C1C1')
-                  .code &nbsp;
-                .color.color-2.baby-blue.c-data(data-clipboard-text='#9ad2ee')
-                  .code &nbsp;
-                .color.color-3.cerulean.c-data(data-clipboard-text='#16B5E5')
-                  .code &nbsp;
-                .color.color-4.medium-blue.c-data(data-clipboard-text='#0004DC')
-                  .code &nbsp;
-                .color.color-5.free-speech-magenta.c-data(data-clipboard-text='#E952F6')
-                  .code &nbsp;
-                .color.color-6.black.c-data(data-clipboard-text='#000000')
-                  .code &nbsp;
+                - colors = {  "silver" => "#C1C1C1", 
+                              "baby-blue" => "#9ad2ee",
+                              "cerulean" => "#16B5E5",
+                              "medium-blue" => "#0004DC",
+                              "free-speech-magenta" => "#E952F6",
+                              "black" => "#000000" }
+
+                - colors.each_with_index do |(name, hex), index|
+                  div class="color color-#{index + 1} #{name} c-data" data-clipboard-text='#{hex}'
+                    .code &nbsp;
+
                 
       section#juice-quest.title
         h1.title Juice Quest Colour Palette
         h3.subtitle Colors, Fonts & other assets
         section.jq.swatches
           .flex.container
-            .color.color-1.magenta-haze
-              .code.c-data(data-clipboard-text='#953d6b') #953d6b
-            .color.color-2.amaranth-purple
-              .code.c-data(data-clipboard-text='#9d2c43') #9d2c43
-            .color.color-3.indian-red
-              .code.c-data(data-clipboard-text='#dd5162') #dd5162
-            .color.color-4.butterscotch
-              .code.c-data(data-clipboard-text='#ea9940') #ea9940
-            .color.color-5.saffron
-              .code.c-data(data-clipboard-text='#f4c046') #f4c046
-            .color.color-6.yellow-green
-              .code.c-data(data-clipboard-text='#9ec757') #9ec757
-            .color.color-7.hunter-green
-              .code.c-data(data-clipboard-text='#245a34') #245a34
-            .color.color-8.dry-green
-              .code.c-data(data-clipboard-text='#386946') #386946
-            .color.color-9.black
-              .code.c-data(data-clipboard-text='#000000') #000000
-            .color.color-10.bg
-              .code.c-data(data-clipboard-text='#222222') #222222
-            .color.color-11.cadet-grey
-              .code.c-data(data-clipboard-text='#9da5ae') #9da5ae
-            .color.color-12.off-white
-              .code.c-data(data-clipboard-text='#f4f4f4') #f4f4f4
+            
+            - colors = {  "magenta-haze" => "#953d6b",
+                          "amaranth-purple" => "#9d2c43",
+                          "indian-red" => "#dd5162",
+                          "butterscotch" => "#ea9940",
+                          "saffron" => "#f4c046",
+                          "yellow-green" => "#9ec757",
+                          "hunter-green" => "#245a34",
+                          "dry-green" => "#386946",
+                          "black" => "#000000",
+                          "bg" => "#222222",
+                          "cadet-grey" => "#9da5ae",
+                          "off-white" => "#f4f4f4" }
+
+            - colors.each_with_index do |(name, hex), index|
+              div class="color color-#{index + 1} #{name}"
+                .code.c-data(data-clipboard-text='#{hex}') = hex
+
         section.jq.content
           .flex.container
             .colors.flex
               .color.color-title
                 h3 Colors
-              .color.color-1.magenta-haze
-                .code.c-data(data-clipboard-text='#953d6b') #953d6b
-                .name magenta haze
-              .color.color-2.amaranth-purple
-                .code.c-data(data-clipboard-text='#9d2c43') #9d2c43
-                .name amaranth purple
-              .color.color-3.indian-red
-                .code.c-data(data-clipboard-text='#dd5162') #dd5162
-                .name indian red
-              .color.color-4.butterscotch
-                .code.c-data(data-clipboard-text='#ea9940') #ea9940
-                .name butterscotch
-              .color.color-5.saffron
-                .code.c-data(data-clipboard-text='#f4c046') #f4c046
-                .name saffron
-              .color.color-6.yellow-green
-                .code.c-data(data-clipboard-text='#9ec757') #9ec757
-                .name yellow green
-              .color.color-7.hunter-green
-                .code.c-data(data-clipboard-text='#245a34') #245a34
-                .name hunter green
-              .color.color-8.dry-green
-                .code.c-data(data-clipboard-text='#386946') #386946
-                .name dry green
-              .color.color-9.black
-                .code.c-data(data-clipboard-text='#000000') #000000
-                .name black
-              .color.color-10.bg 
-                .code.c-data(data-clipboard-text='#222222') #222222
-                .name dark grey
-              .color.color-11.cadet-grey
-                .code.c-data(data-clipboard-text='#9da5ae') #9da5ae
-                .name cadet grey
-              .color.color-12.off-white
-                .code.c-data(data-clipboard-text='#f4f4f4') #f4f4f4
-                .name off white
+              /! .color.color-1.magenta-haze
+              /!   .code.c-data(data-clipboard-text='#953d6b') #953d6b
+              /!   .name magenta haze
+
+
+              - colors = {  "magenta-haze" => "#953d6b",
+                            "amaranth-purple" => "#9d2c43",
+                            "indian-red" => "#dd5162",
+                            "butterscotch" => "#ea9940",
+                            "saffron" => "#f4c046",
+                            "yellow-green" => "#9ec757",
+                            "hunter-green" => "#245a34",
+                            "dry-green" => "#386946",
+                            "black" => "#000000",
+                            "bg" => "#222222",
+                            "cadet-grey" => "#9da5ae",
+                            "off-white" => "#f4f4f4" }
+
+              - colors.each_with_index do |(name, hex), index|
+                div class="color color-#{index + 1} #{name}"
+                  .code.c-data(data-clipboard-text='#{hex}') = hex
+                  .name = name
+
             .assets.flex
               .url
                 h3 Juice Quest URL:
@@ -229,46 +196,44 @@ html lang="en"
         h3.subtitle Colors, Fonts & other assets
         section.ccf.swatches
           .flex.container
-            .color.color-1.eerie-black
-              .code.c-data(data-clipboard-text='#282624') #282624
-            .color.color-2.school-bus-yellow
-              .code.c-data(data-clipboard-text='#ffdd00') #ffdd00
-            .color.color-3.ut-orange
-              .code.c-data(data-clipboard-text='#ff8500') #ff8500
-            .color.color-4.burnt-orange
-              .code.c-data(data-clipboard-text='#aa5900') #aa5900
-            .color.color-5.coyote
-              .code.c-data(data-clipboard-text='#72664c') #72664c
-            .color.color-6.lion
-              .code.c-data(data-clipboard-text='#a3926d') #a3926d
-            .color.color-7.champagne
-              .code.c-data(data-clipboard-text='#ffe9c9') #ffe9c9
+            /! .color.color-1.eerie-black
+            /!   .code.c-data(data-clipboard-text='#282624') #282624
+            
+            - colors = {  "eerie-black" => "#282624",
+                          "school-bus-yellow" => "#ffdd00",
+                          "ut-orange" => "#ff8500",
+                          "burnt-orange" => "#aa5900",
+                          "coyote" => "#72664c",
+                          "lion" => "#a3926d",
+                          "champagne" => "#ffe9c9" }
+            - colors.each_with_index do |(name, hex), index|
+              div class="color color-#{index + 1} #{name}"
+                .code.c-data(data-clipboard-text='#{hex}') = hex
+
+
         section.ccf.content
           .flex.container
             .colors.flex
               .color.color-title
                 h3 Colors
-              .color.color-1.eerie-black
-                .code.code.c-data(data-clipboard-text='#282624') #282624
-                .name Eerie Black
-              .color.color-2.school-bus-yellow
-                .code.code.c-data(data-clipboard-text='#ffdd00') #ffdd00
-                .name School bus Yellow
-              .color.color-3.ut-orange
-                .code.code.c-data(data-clipboard-text='#ff8500') #ff8500
-                .name Ut Orange
-              .color.color-4.burnt-orange
-                .code.code.c-data(data-clipboard-text='#aa5900') #aa5900
-                .name Burnt Orange
-              .color.color-5.coyote
-                .code.code.c-data(data-clipboard-text='#72664c') #72664c
-                .name Coyote
-              .color.color-6.lion
-                .code.code.c-data(data-clipboard-text='#a3926d') #a3926d
-                .name Lion
-              .color.color-7.champagne
-                .code.code.c-data(data-clipboard-text='#ffe9c9') #ffe9c9
-                .name Champagne
+
+              /! .color.color-3.ut-orange
+              /!   .code.code.c-data(data-clipboard-text='#ff8500') #ff8500
+              /!   .name Ut Orange
+
+              - colors = {  "eerie-black" => "#282624",
+                            "school-bus-yellow" => "#ffdd00",
+                            "ut-orange" => "#ff8500",
+                            "burnt-orange" => "#aa5900",
+                            "coyote" => "#72664c",
+                            "lion" => "#a3926d",
+                            "champagne" => "#ffe9c9" }
+
+              - colors.each_with_index do |(name, hex), index|
+                div class="color color-#{index + 1} #{name}"
+                  .code.c-data(data-clipboard-text='#{hex}') = hex
+                  .name = name
+
             .assets.flex
               .url
                 h3 Cockatoo Creek Farm URL:
@@ -316,56 +281,48 @@ html lang="en"
         h3.subtitle Colors, Fonts & other assets
         section.nira.swatches
           .flex.container
-            .color.color-1.dark-green
-              .code.c-data(data-clipboard-text='#092b2a') #092b2a
-            .color.color-2.midnight-green
-              .code.c-data(data-clipboard-text='#1c5661') #1c5661
-            .color.color-3.blue-munsell
-              .code.c-data(data-clipboard-text='#2a8294') #2a8294
-            .color.color-4.sky-blue
-              .code.c-data(data-clipboard-text='#7cc5d4') #7cc5d4
-            .color.color-5.persian-green
-              .code.c-data(data-clipboard-text='#20aa9d') #20aa9d
-            .color.color-6.cream
-              .code.c-data(data-clipboard-text='#ffffcc') #ffffcc
-            .color.color-7.pink-lavender
-              .code.c-data(data-clipboard-text='#ffccff') #ffccff
-            .color.color-8.celeste
-              .code.c-data(data-clipboard-text='#aaffff') #aaffff
-            .color.color-9.columbia-blue
-              .code.c-data(data-clipboard-text='#ccf0ff') #ccf0ff
+
+            /! .color.color-2.midnight-green
+            /!   .code.c-data(data-clipboard-text='#1c5661') #1c5661
+
+            - colors = {  "dark-green" => "#092b2a",
+                          "midnight-green" => "#1c5661",
+                          "blue-munsell" => "#2a8294",
+                          "sky-blue" => "#7cc5d4",
+                          "persian-green" => "#20aa9d",
+                          "cream" => "#ffffcc",
+                          "pink-lavender" => "#ffccff",
+                          "celeste" => "#aaffff",
+                          "columbia-blue" => "#ccf0ff"}
+
+            - colors.each_with_index do |(name, hex), index|
+              div class="color color-#{index + 1} #{name}"
+                .code.c-data(data-clipboard-text='#{hex}') = hex
+
         section.nira.content
           .flex.container
             .colors.flex
               .color.color-title
                 h3 Colors
-              .color.color-1.dark-green
-                .code.c-data(data-clipboard-text='#092b2a') #092b2a
-                .name Dark Green
-              .color.color-2.midnight-green
-                .code.c-data(data-clipboard-text='#1c5661') #1c5661
-                .name Midnight Green
-              .color.color-3.blue-munsell
-                .code.c-data(data-clipboard-text='#2a8294') #2a8294
-                .name Blue Munsell
-              .color.color-4.sky-blue
-                .code.c-data(data-clipboard-text='#7cc5d4') #7cc5d4
-                .name Sky Blue
-              .color.color-5.persian-green
-                .code.c-data(data-clipboard-text='#20aa9d') #20aa9d
-                .name Persian Green
-              .color.color-6.cream
-                .code.c-data(data-clipboard-text='#ffffcc') #ffffcc
-                .name Cream
-              .color.color-7.pink-lavender
-                .code.c-data(data-clipboard-text='#ffccff') #ffccff
-                .name Pink Lavender
-              .color.color-8.celeste
-                .code.c-data(data-clipboard-text='#aaffff') #aaffff
-                .name Celeste
-              .color.color-9.columbia-blue
-                .code.c-data(data-clipboard-text='#ccf0ff') #ccf0ff
-                .name Columbia Blue
+              /! .color.color-1.dark-green
+              /!   .code.c-data(data-clipboard-text='#092b2a') #092b2a
+              /!   .name Dark Green
+
+              - colors = { "dark-green" => "#092b2a",
+                            "midnight-green" => "#1c5661",
+                            "blue-munsell" => "#2a8294",
+                            "sky-blue" => "#7cc5d4",
+                            "persian-green" => "#20aa9d",
+                            "cream" => "#ffffcc",
+                            "pink-lavender" => "#ffccff",
+                            "celeste" => "#aaffff",
+                            "columbia-blue" => "#ccf0ff"}
+
+
+              - colors.each_with_index do |(name, hex), index|
+                div class="color color-#{index + 1} #{name}"
+                  .code.c-data(data-clipboard-text='#{hex}') = hex
+                  .name = name
             .assets.flex
               .url
                 h3 NiRA URL:
@@ -405,48 +362,42 @@ html lang="en"
               h3.subtitle Colors, Fonts & other assets
               section.ss.swatches
                 .flex.container
-                  .color.color-1.silver
-                    .code.c-data(data-clipboard-text='#C1C1C1') #C1C1C1
-                  .color.color-2.baby-blue
-                    .code.c-data(data-clipboard-text='#9ad2ee') #9ad2ee
-                  .color.color-3.cerulean
-                    .code.c-data(data-clipboard-text='#16B5E5') #16B5E5
-                  .color.color-4.medium-blue
-                    .code.c-data(data-clipboard-text='#0004DC') #0004DC
-                  .color.color-5.free-speech-magenta
-                    .code.c-data(data-clipboard-text='#E952F6') #E952F6
-                  .color.color-6.black
-                    .code.c-data(data-clipboard-text='#000000') #000000
+                  /! .color.color-1.silver
+                  /!   .code.c-data(data-clipboard-text='#C1C1C1') #C1C1C1
 
-                  / - ssColors = { 'silver' => '#c1c1c1', 'baby-blue' => '#9ad2ee', 'cerulean' => '#16B5E5', 'medium-blue' => '#0004DC', 'free-speech-magenta' => '#E952F6' };
+                  
+                  - colors = {  "silver" => "#C1C1C1",
+                                "baby-blue" => "#9ad2ee",
+                                "cerulean" => "#16B5E5",
+                                "medium-blue" => "#0004DC",
+                                "free-speech-magenta" => "#E952F6",
+                                "black" => "#000000" }
 
-                  / - for n in 1..5 do
-                  /   .color(class='color-#{n} #{ssColors}'  )
-                  /     code #{ssColors.select}
-                    
+                  - colors.each_with_index do |(name, hex), index|
+                    div class="color color-#{index + 1} #{name}"
+                      .code.c-data(data-clipboard-text='#{hex}') = hex
+              
               section.ss.content
                 .flex.container
                   .colors.flex
                     .color.color-title
                       h3 Colors
-                    .color.color-1.silver
-                      .code.c-data(data-clipboard-text='#C1C1C1') #C1C1C1
-                      .name silver
-                    .color.color-2.baby-blue
-                      .code.c-data(data-clipboard-text='#9ad2ee') #9ad2ee
-                      .name baby-blue
-                    .color.color-3.cerulean
-                      .code.c-data(data-clipboard-text='#16B5E5') #16B5E5
-                      .name cerulean
-                    .color.color-4.medium-blue
-                      .code.c-data(data-clipboard-text='#0004DC') #0004DC
-                      .name medium-blue
-                    .color.color-5.free-speech-magenta
-                      .code.c-data(data-clipboard-text='#E952F6') #E952F6
-                      .name free-speech-magenta
-                    .color.color-6.black
-                      .code.c-data(data-clipboard-text='#000000') #000000
-                      .name black
+                    /! .color.color-1.silver
+                    /!  .code.c-data(data-clipboard-text='#C1C1C1') #C1C1C1
+                    /!  .name silver
+                    
+                    - colors = {  "silver" => "#C1C1C1",
+                                  "baby-blue" => "#9ad2ee",
+                                  "cerulean" => "#16B5E5",
+                                  "medium-blue" => "#0004DC",
+                                  "free-speech-magenta" => "#E952F6",
+                                  "black" => "#000000" }
+
+                    - colors.each_with_index do |(name, hex), index|
+                      div class="color color-#{index + 1} #{name}"
+                        .code.c-data(data-clipboard-text='#{hex}') = hex
+                        .name = name
+
                   .assets.flex
                     .url
                       h3 Savvy Savers URL:
